@@ -1,0 +1,70 @@
+What is Cucumber?
+ Cucumber is a testing framework which supports BDD. Using Cucumber we can describe the behaviour of the 
+ application using plain English in a file called feature file and the grammar that we use in that feature file is called as Gherkin. 
+ Even though cucumber is written in Ruby, we can use it with Java, C# and Python.
+
+Important steps of Cuccumber:
+ 
+1.Creating a feature file for the steps
+2.Creating a stepdefinitions where java codes will be entered
+3.Runner Class which is a JAva class connecting the steps in feature file to with the corresponding methods in step definition.
+
+There are 3 Sending datas from feature files to setDef class using data tables
+1.  Datatable with header
+ 2. Datatable without header
+ 3. Using data table and examples
+ 
+ 
+ CucumberOptions
+ dryRun - It accepts the boolean value,when its is true it doesnt execute the test instead
+  it checks(maps) and validates that all the steps written in
+ feature file has corresponding step definitions.
+ 
+strict -it accepts boolean value, it is contrast to dryRun it executes the program and check for the mapping of steps with stepDefinitions, it is deprecated
+
+monochrome - it accepts boolean value and displays the console output as elegant as possible and makes it human readable.
+
+format or plugin - this is used to genearte report in the desired format(.html,.json,pretty,txt)
+example for writing the report "html:target/cucumber-reports/cucumber.html"
+(note:format is deprecated)
+
+tags - there are used to run particular scenarios in a multiple scenarios feature file
+A feature or scenario can have as many tags as you like. Separate them with spaces.
+
+
+Tag expressions
+A tag expression is an infix boolean expression. Below are some examples:
+
+Expression	Description
+@fast	- Scenarios tagged with @fast
+@wip and not @slow	- Scenarios tagged with @wip that aren’t also tagged with @slow
+@smoke and @fast	- Scenarios tagged with both @smoke and @fast
+@gui or @database	- Scenarios tagged with either @gui or @database
+
+For even more advanced tag expressions you can use parenthesis for clarity, or to change operator precedence:
+
+(@smoke or @ui) and (not @slow)
+
+Hooks - It is execulsively used to setting this up before and after the execution of every scenarios, kinda similar to TestNG before and after suite
+@Before and @After are hook tags, it can be implemented either in stepdefinition class or in a separate class in diferent package.
+
+Tagged Hooks - It is similar to hooks but here the hook will be followed by tags from the feature that
+defines where the hook must run before or after of which scenario, tags can also be clubbed to run it before the clubbed scenarios.
+
+Example 
+@Before("@tag1,tag2")
+@After("tag2")
+
+										Background
+
+Occasionally you’ll find yourself repeating the same Given steps in all of the scenarios in a Feature.
+
+Since it is repeated in every scenario, this is an indication that those steps are not essential to describe the scenarios; they are incidental details. You can literally move such Given steps to the background, by grouping them under a Background section.
+
+A Background allows you to add some context to the scenarios that follow it. It can contain one or more Given steps, which are run before each scenario, but after any Before hooks.
+
+A Background is placed before the first Scenario/Example, at the same level of indentation.
+
+You can only have one set of Background steps per Feature or Rule. If you need different Background steps for different scenarios, consider breaking up your set of scenarios into more Rules or more Features.
+
+For a less explicit alternative to Background, check out conditional hooks.

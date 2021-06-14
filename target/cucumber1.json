@@ -1,0 +1,427 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-11T11:50:18.274Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2992400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforeclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforefirstandsecondclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforefirstclass()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Scenario of first hook",
+        "description": "",
+        "id": "example-of-tagged-hook;scenario-of-first-hook",
+        "after": [
+          {
+            "result": {
+              "duration": 998900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.afterfirstclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.aftertheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.afterclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 995200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.aftertheclass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am from first step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_first_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 994200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am from second step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_second_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3992200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am from third step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_third_step()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@taggedHook"
+          },
+          {
+            "name": "@hook1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-11T11:50:18.366Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforeclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 989100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforesecondclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforefirstandsecondclass()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Scenario of second hook",
+        "description": "",
+        "id": "example-of-tagged-hook;scenario-of-second-hook",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.afterthirdandsecondclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1019100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.aftersecondclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.aftertheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.afterclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.aftertheclass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am from first step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_first_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am from second step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_second_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am from third step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_third_step()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@taggedHook"
+          },
+          {
+            "name": "@hook2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-11T11:50:18.401Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.beforeclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforetheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.beforethirdclass()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Scenario of third hook",
+        "description": "",
+        "id": "example-of-tagged-hook;scenario-of-third-hook",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.afterthirdandsecondclass()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.afterthirdclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TaggedHookExample.aftertheclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.afterclass()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.HooksExample.aftertheclass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am from first step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_first_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am from second step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_second_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am from third step",
+            "match": {
+              "location": "stepDefinitions.TaggedHookStepDef.i_am_from_third_step()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@taggedHook"
+          },
+          {
+            "name": "@hook3"
+          }
+        ]
+      }
+    ],
+    "name": "Example of tagged hook",
+    "description": "",
+    "id": "example-of-tagged-hook",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/taggedHook.feature",
+    "tags": [
+      {
+        "name": "@taggedHook",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
